@@ -121,12 +121,16 @@ Os testes automatizados são executados **sem chave de API** via pytest. Validam
 
 **Resultados que devem ser registrados após executar no seu PC:**
 
-- `pytest -ra`: ____ aprovados / ____ ignorados / ____ falhas.
-- Teste de ReAct com Groq e ambas as ferramentas: ____ (anexar captura).
-- Teste de memória na mesma conversa: ____ (anexar captura).
-- Nova conversa com `thread_id` distinto: ____ (anexar captura).
+- `pytest -ra`:collected 18 items                                                                                                                           
 
-Não marque os testes com LLM como aprovados antes de realmente rodá-los. Uma falha da API não comprova execução bem-sucedida do agente.
+testes\test_projeto.py ..................                                                                                              [100%]
+
+============================== 18 passed, 17 warnings in 0.78s ======================================================                                                                                       [100%]
+
+- Teste de ReAct com Groq e ambas as ferramentas: Aprovado.
+- Teste de memória na mesma conversa: Aprovado.
+- Nova conversa com `thread_id` distinto: Aprovado.
+
 
 ## 8. Por que o agente ajuda, comparado ao processo manual?
 
@@ -141,4 +145,4 @@ Não marque os testes com LLM como aprovados antes de realmente rodá-los. Uma f
 - [Memória de agentes LangChain](https://docs.langchain.com/oss/python/langchain/short-term-memory)
 - [Modelos disponíveis no Groq](https://console.groq.com/docs/models)
 
-**GitHub:** crie um repositório público e publique estes arquivos (sem `.env` e `.venv`). Verifique o README e inclua capturas das execuções que realmente aconteceram, se possível. Depois compacte a pasta com o nome exato `diego_favretto_DR3_TP3.ZIP` e envie o ZIP na plataforma da faculdade conforme o enunciado.
+
